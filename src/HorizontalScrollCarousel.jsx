@@ -2,21 +2,27 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-const Example = () => {
+const Hsc = () => {
   return (
-    <div className="bg-neutral-800">
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll down
-        </span>
-      </div>
+    <>
+      <section className="bg-neutral-800 relative z-[10]">
+        <div className="flex h-screen items-center justify-center">
+          <span className="font-semibold whitespace-nowrap uppercase text-neutral-500">
+            Scroll down
+          </span>
+        </div>
+      </section>
+
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll up
-        </span>
-      </div>
-    </div>
+      <div className="h-[250vh] bg-none"></div>
+      <section className="bg-amber-400 relative z-[10]">
+        <div className="flex h-screen items-center justify-center">
+          <span className="font-semibold whitespace-nowrap uppercase text-neutral-500">
+            Scroll up
+          </span>
+        </div>
+      </section>
+    </>
   );
 };
 
@@ -26,18 +32,20 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-100%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
-        </motion.div>
-      </div>
-    </section>
+    <div className="fixed top-0 z-[1]">
+      <section ref={targetRef} className="relative h-[400vh] bg-neutral-900">
+        <div className="flex h-screen items-center overflow-hidden">
+          <motion.div style={{ x }} className="flex pl-[58%] gap-12">
+            {cards.map((card) => {
+              return <Card card={card} key={card.id} />;
+            })}
+          </motion.div>
+        </div>
+      </section>
+    </div>
   );
 };
 
@@ -64,7 +72,7 @@ const Card = ({ card }) => {
   );
 };
 
-export default Example;
+export default Hsc;
 
 const cards = [
   {
