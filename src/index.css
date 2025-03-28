@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
+:root {
+  font-family: "Rubik";
+}
+
 html,
 body {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }

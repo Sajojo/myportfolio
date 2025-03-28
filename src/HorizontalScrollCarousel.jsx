@@ -1,25 +1,22 @@
 // eslint-disable-next-line no-unused-vars
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import HeroText from "./subassets/HeroText";
 
 const Hsc = () => {
   return (
     <>
-      <section className="bg-neutral-800 relative z-[10]">
+      <section className="bg-[#1E1E24] relative z-[10]">
         <div className="flex h-screen items-center justify-center">
-          <span className="font-semibold whitespace-nowrap uppercase text-neutral-500">
-            Scroll down
-          </span>
+          <HeroText />
         </div>
       </section>
 
       <HorizontalScrollCarousel />
       <div className="h-[250vh] bg-none"></div>
-      <section className="bg-amber-400 relative z-[10]">
+      <section className="bg-[#1E1E24] relative z-[10]">
         <div className="flex h-screen items-center justify-center">
-          <span className="font-semibold whitespace-nowrap uppercase text-neutral-500">
-            Scroll up
-          </span>
+          Scroll up
         </div>
       </section>
     </>
@@ -36,7 +33,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <div className="fixed top-0 z-[1]">
-      <section ref={targetRef} className="relative h-[400vh] bg-neutral-900">
+      <section ref={targetRef} className="relative h-[400vh] bg-[#FFF8F0]">
         <div className="flex h-screen items-center overflow-hidden">
           <motion.div style={{ x }} className="flex pl-[58%] gap-12">
             {cards.map((card) => {
