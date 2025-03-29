@@ -47,7 +47,7 @@ const HorizontalScrollCarousel = () => {
             })}
           </motion.div>
         </div>
-        <div className="fixed bottom-0 mb-[15%]">
+        <div className="fixed bottom-0 mb-[15%] pb-[env(safe-area-inset-bottom)]">
           <span className="flex flex-col justify-center items-center w-screen">
             <p>Scroll Down</p>
             <motion.div
