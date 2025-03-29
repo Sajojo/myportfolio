@@ -25,7 +25,7 @@ const Intro = () => {
           className="flex flex-col p-5 gap-10 text-2xl text-[#FFCF99] md:gap-10 md:flex-row lg:gap-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 5, duration: 5 }}
+          transition={{ delay: 5, duration: 3 }}
         >
           <a
             href="/#work"
