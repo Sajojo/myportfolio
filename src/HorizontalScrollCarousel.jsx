@@ -8,7 +8,7 @@ const Hsc = () => {
   return (
     <>
       <section className="bg-[#1E1E24] relative z-[10]">
-        <div className="flex h-screen items-start pt-[17%] justify-center">
+        <div className="flex h-screen items-start pt-[17%] sm:pt-0 sm:items-center justify-center">
           <Intro />
         </div>
       </section>
@@ -36,7 +36,8 @@ const HorizontalScrollCarousel = () => {
   return (
     <div className="fixed top-0 z-[1]">
       <section ref={targetRef} className="relative h-[400vh] bg-[#FFCF99]">
-        <div className="flex h-screen items-center overflow-hidden">
+        <div className="flex flex-row h-screen items-center overflow-hidden">
+          <h2 className="text-[#000] font-bold text-5xl">This is my work</h2>
           <motion.div style={{ x }} className="flex pl-[58%] gap-12">
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
