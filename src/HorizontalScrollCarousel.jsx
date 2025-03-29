@@ -32,7 +32,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-110%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-200%"]);
 
   return (
     <div className="fixed top-0 z-[1]">
@@ -41,8 +41,8 @@ const HorizontalScrollCarousel = () => {
           <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-8xl sm:text-9xl">
             This is my work
           </h2>
-          <div className="sm:justify-center sm:items-center">
-            <span className="flex fixed right-15 sm:right-[auto] flex-col justify-center items-center">
+          <div className="fixed right-15 ">
+            <span className="flex flex-col justify-center items-center">
               <p>Scroll Down</p>
               <motion.div
                 animate={{
