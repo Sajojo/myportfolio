@@ -3,6 +3,8 @@
 :root {
   font-family: "Rubik";
   overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 html,
