@@ -37,7 +37,9 @@ const HorizontalScrollCarousel = () => {
     <div className="fixed top-0 z-[1]">
       <section ref={targetRef} className="relative h-[400vh] bg-[#FFCF99]">
         <div className="flex flex-row h-screen items-center overflow-hidden">
-          <h2 className="text-[#000] font-bold text-5xl">This is my work</h2>
+          <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-9xl">
+            This is my work
+          </h2>
           <motion.div style={{ x }} className="flex pl-[58%] gap-12">
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
@@ -51,7 +53,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <section>
+    <section className="border-8 border-white">
       <div
         key={card.id}
         className="group relative h-[350px] w-[350px] sm:h-[450px] sm:w-[450px] overflow-hidden bg-neutral-200"
@@ -66,7 +68,7 @@ const Card = ({ card }) => {
         ></div>
       </div>
       <div className="">
-        <p className="bg-[#FFF] mt-4 p-4 text-base sm:mt-6 sm:p-6 sm:text-2xl italic text-[#111D4A] backdrop-blur-lg">
+        <p className="bg-[#FFF] p-4 text-base sm:p-6 sm:text-2xl italic text-[#111D4A] w-full">
           {card.title}
         </p>
       </div>
@@ -77,16 +79,6 @@ const Card = ({ card }) => {
 export default Hsc;
 
 const cards = [
-  {
-    url: "carouselStuff/car.jpg",
-    title: '"tree hugger" - Filmore (Cars)',
-    id: 1,
-  },
-  {
-    url: "carouselStuff/yes.jpg",
-    title: '"Yes"',
-    id: 2,
-  },
   {
     url: "carouselStuff/hands.jpg",
     title: `"Baby I'm yours - Arctic Monkeys"`,

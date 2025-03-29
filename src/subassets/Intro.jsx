@@ -12,7 +12,7 @@ const Intro = () => {
           <span style={{ color: "#FFF", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["Hi there...", "I'm Jo", "How well do you know me?"]}
+              words={["Hi there...", "I'm Jo", "How Well do you know me?"]}
               cursor
               cursorStyle="_"
               typeSpeed={70}
