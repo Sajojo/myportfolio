@@ -3,6 +3,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Intro from "./subassets/Intro";
 import About from "./subassets/About";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Hsc = () => {
   return (
@@ -45,6 +46,12 @@ const HorizontalScrollCarousel = () => {
               return <Card card={card} key={card.id} />;
             })}
           </motion.div>
+        </div>
+        <div className="fixed bottom-0 mb-[5%]">
+          <span className="flex flex-col justify-center items-center w-screen">
+            <p>Scroll Down</p>
+            <MdKeyboardDoubleArrowDown className="size-10" />
+          </span>
         </div>
       </section>
     </div>
