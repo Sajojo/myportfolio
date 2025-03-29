@@ -65,7 +65,7 @@ const Card = ({ card }) => {
         ></div>
       </div>
       <div className="">
-        <p className="bg-[#FFF] mt-8 p-8 text-2xl italic text-[#111D4A] backdrop-blur-lg">
+        <p className="bg-[#FFF] mt-6 p-6 text-2xl italic text-[#111D4A] backdrop-blur-lg">
           {card.title}
         </p>
       </div>
