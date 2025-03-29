@@ -41,7 +41,8 @@ const HorizontalScrollCarousel = () => {
           <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-8xl sm:text-9xl">
             This is my work
           </h2>
-          <div className="fixed right-15 ">
+
+          <div className="fixed right-15 sm:left-15">
             <span className="flex flex-col justify-center items-center">
               <p>Scroll Down</p>
               <motion.div
@@ -60,7 +61,7 @@ const HorizontalScrollCarousel = () => {
           </div>
           <motion.div
             style={{ x }}
-            className="flex items-center ml-[105%] sm:ml-[150%] gap-12 bg-[#FFCF99]"
+            className="flex items-center ml-[162%] sm:ml-[180%] gap-12 bg-[#FFCF99]"
           >
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
