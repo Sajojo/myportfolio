@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import { motion, useTransform, useScroll } from "framer-motion";
+import { motion, useTransform, useScroll, useInView } from "framer-motion";
 import { useRef } from "react";
 import Intro from "./subassets/Intro";
 import About from "./subassets/About";
@@ -50,7 +50,18 @@ const HorizontalScrollCarousel = () => {
         <div className="fixed bottom-0 mb-[5%]">
           <span className="flex flex-col justify-center items-center w-screen">
             <p>Scroll Down</p>
-            <MdKeyboardDoubleArrowDown className="size-10" />
+            <motion.div
+              animate={{
+                translateY: [10, 7, 5, 1, 5, 7, 10],
+              }}
+              transition={{
+                duration: 1,
+
+                repeat: Infinity,
+              }}
+            >
+              <MdKeyboardDoubleArrowDown className="size-10" />
+            </motion.div>
           </span>
         </div>
       </section>
