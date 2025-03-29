@@ -31,7 +31,7 @@ const Intro = () => {
             href="/#work"
             className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
           >
-            <strong>What</strong> you do
+            <strong>What</strong> I do
           </a>
           <a
             href="/#about"
