@@ -8,7 +8,7 @@ const Hsc = () => {
   return (
     <>
       <section className="bg-[#1E1E24] relative z-[10]">
-        <div className="flex h-screen items-center justify-center">
+        <div className="flex h-screen items-start pt-[12%] justify-center">
           <Intro />
         </div>
       </section>
