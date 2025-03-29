@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col items-center h-[300vh]">
-        <span className="sticky top-0 w-full bg-[#1E1E24] ">
+        <span className="sticky top-0 flex justify-center w-full bg-[#1E1E24] ">
           <h2 className=" text-[#FFF] font-bold p-10 pr-12 text-5xl">
             This is Me
           </h2>

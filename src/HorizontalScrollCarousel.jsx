@@ -31,7 +31,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-110%"]);
 
   return (
     <div className="fixed top-0 z-[1]">
@@ -65,7 +65,7 @@ const Card = ({ card }) => {
         ></div>
       </div>
       <div className="">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+        <p className="bg-[#FFF] mt-8 p-8 text-2xl italic text-[#111D4A] backdrop-blur-lg">
           {card.title}
         </p>
       </div>
@@ -78,37 +78,37 @@ export default Hsc;
 const cards = [
   {
     url: "carouselStuff/car.jpg",
-    title: "Title 1",
+    title: '"tree hugger" - Filmore (Cars)',
     id: 1,
   },
   {
     url: "carouselStuff/yes.jpg",
-    title: "Title 2",
+    title: '"Yes"',
     id: 2,
   },
   {
     url: "carouselStuff/hands.jpg",
-    title: "Title 3",
+    title: `"Baby I'm yours - Arctic Monkeys"`,
     id: 3,
   },
   {
     url: "carouselStuff/night.jpg",
-    title: "Title 4",
+    title: "Bustling city",
     id: 4,
   },
   {
     url: "carouselStuff/bird.jpg",
-    title: "Title 5",
+    title: "Tokyo drama",
     id: 5,
   },
   {
     url: "carouselStuff/bicycleLady.jpg",
-    title: "Title 6",
+    title: "Bicycle Lady",
     id: 6,
   },
   {
     url: "carouselStuff/oldLady.jpg",
-    title: "Title 7",
+    title: "Sweet old lady",
     id: 7,
   },
 ];
