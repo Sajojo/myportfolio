@@ -32,7 +32,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-200%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-220%"]);
 
   return (
     <div className="fixed top-0 z-[1]">
@@ -61,7 +61,7 @@ const HorizontalScrollCarousel = () => {
           </div>
           <motion.div
             style={{ x }}
-            className="flex items-center ml-[162%] sm:ml-[180%] gap-12 bg-[#FFCF99]"
+            className="flex items-center ml-[162%] sm:ml-[190%] gap-12 bg-[#FFCF99]"
           >
             {cards.map((card) => {
               return <Card card={card} key={card.id} />;
