@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col w-full">
-        <h1 className="p-10 pr-12 text-5xl">
+        <h1 className="p-10 pt-0 pr-12 text-5xl sm:pt-10">
           {" "}
           <span style={{ color: "#FFF", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
