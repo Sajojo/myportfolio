@@ -37,7 +37,7 @@ const HorizontalScrollCarousel = () => {
     <div className="fixed top-0 z-[1]">
       <section ref={targetRef} className="relative h-[400vh] bg-[#FFCF99]">
         <div className="flex flex-row h-screen items-center overflow-hidden">
-          <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-9xl">
+          <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-8xl sm:text-9xl">
             This is my work
           </h2>
           <motion.div style={{ x }} className="flex pl-[58%] gap-12">
