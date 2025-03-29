@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col w-full">
         <h1 className="p-10 pr-12 text-5xl">
           {" "}
           <span style={{ color: "#FFF", fontWeight: "bold" }}>
@@ -22,7 +22,7 @@ const Intro = () => {
           </span>
         </h1>
         <motion.div
-          className="flex p-5 gap-20 text-2xl text-[#FFCF99]"
+          className="flex flex-col p-5 gap-10 text-2xl text-[#FFCF99] md:gap-10 md:flex-row lg:gap-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 5, duration: 5 }}
@@ -31,19 +31,19 @@ const Intro = () => {
             href="/#work"
             className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
           >
-            I know what you do
+            I know <strong>What</strong> you do
           </a>
           <a
             href="/#about"
             className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
           >
-            I know who you are
+            I know <strong>Who</strong> you are
           </a>
           <a
             href="#ctc"
             className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
           >
-            I know how to find you
+            I know <strong>How</strong> to find you
           </a>
         </motion.div>
       </div>
