@@ -48,19 +48,21 @@ const Hero = () => {
 const CenterImage = () => {
   const { scrollY } = useScroll();
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
+  {
+    /*useMotionValueEvent(scrollY, "change", (latest) => {
     console.log(latest);
-  });
-  const clip1 = useTransform(scrollY, [1908, 2350], [25, 0]);
-  const clip2 = useTransform(scrollY, [1908, 2350], [75, 100]);
+  });*/
+  }
+  const clip1 = useTransform(scrollY, [1908, 5555], [25, 0]);
+  const clip2 = useTransform(scrollY, [1908, 5555], [75, 100]);
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
-  const backgroundSize = useTransform(scrollY, [1908, 4500], ["170%", "240%"]);
+  const backgroundSize = useTransform(scrollY, [1908, 7500], ["170%", "240%"]);
 
   return (
     <motion.div
-      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[70%] bg-center"
+      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[60%] bg-center"
       style={{
         clipPath,
         backgroundSize,
@@ -72,9 +74,11 @@ const CenterImage = () => {
       }}
     >
       <span className="flex flex-col leading-[0.65]">
-        <span className="text-[45vw] tracking-[-0.12em]">THIS</span>
-        <span className="text-[70vw] "> IS</span>
-        <span className="text-[60vw]">ME</span>
+        <span className="text-[45vw] tracking-[-0.12em] sm:text-[25vw] md:text-[25vw]">
+          THIS
+        </span>
+        <span className="text-[70vw] sm:text-[45vw] md:text-[40vw]"> IS</span>
+        <span className="text-[60vw] sm:text-[35vw] md:text-[30vw]">ME</span>
       </span>
     </motion.div>
   );
@@ -84,7 +88,7 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="camera3.JPG"
+        src="./parallaxStuff/camera3.JPG"
         alt="And example of a space launch"
         start={-200}
         end={200}
@@ -98,14 +102,14 @@ const ParallaxImages = () => {
         className="mx-25 w-2/3"
       />
       <ParallaxImg
-        src="./camera2.png"
+        src="./parallaxStuff/camera2.png"
         alt="Orbiting satellite"
         start={250}
         end={50}
         className="ml-auto w-1/3 sm:ml-200"
       />
       <ParallaxImg
-        src="./camera1.png"
+        src="./parallaxStuff/camera1.png"
         alt="Orbiting satellite"
         start={-150}
         end={500}
