@@ -1,6 +1,7 @@
 import Hsc from "./HorizontalScrollCarousel.jsx";
 import About from "./subassets/About.jsx";
 import Intro from "./subassets/Intro.jsx";
+import Contact from "./subassets/Contact.jsx";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       <div id="about" className="relative w-screen z-0">
         <About />
       </div>
+      {/*<div id="ctc">
+        <Contact />
+      </div>*/}
     </>
   );
 }

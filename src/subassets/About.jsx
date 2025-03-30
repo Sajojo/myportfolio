@@ -33,10 +33,7 @@ const SECTION_HEIGHT = 1900;
 
 const Hero = () => {
   return (
-    <div
-      style={{ height: `calc(${SECTION_HEIGHT}px + 180vh)` }}
-      className="relative w-full"
-    >
+    <div className="relative w-full h-[calc(1900px+180vh)] sm:h-[calc(1900px+300vh)]">
       <div className="flex sticky top-0 justify-center">
         <CenterImage />
       </div>

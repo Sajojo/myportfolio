@@ -12,7 +12,7 @@ const Intro = () => {
           <span style={{ color: "#FFF", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["Hi there...", "I'm Jo", "How well do you know me?"]}
+              words={["Hi there...", "I'm Jo", "This is the Intro..."]}
               cursor
               cursorStyle="_"
               typeSpeed={70}
@@ -29,21 +29,21 @@ const Intro = () => {
         >
           <a
             href="/#work"
-            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
+            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
           >
-            <strong>What</strong> I do
+            <strong>This</strong> is my work
           </a>
           <a
             href="/#about"
-            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
+            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
           >
-            <strong>Who</strong> I am
+            <strong>This</strong> is me
           </a>
           <a
             href="#ctc"
-            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200"
+            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
           >
-            <strong>How</strong> to find me
+            <strong>This</strong> to find me
           </a>
         </motion.div>
       </div>
