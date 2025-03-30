@@ -1,28 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import { motion, useTransform, useScroll, useInView } from "framer-motion";
 import { useRef } from "react";
-import Intro from "./subassets/Intro";
-import About from "./subassets/About";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Hsc = () => {
   return (
-    <>
-      <section className="bg-[#1E1E24] relative z-[10]">
-        <div className="flex h-screen items-start pt-[17%] sm:pt-0 sm:items-center justify-center">
-          <Intro />
-        </div>
-      </section>
-      <section id="work">
-        <HorizontalScrollCarousel />
-      </section>
-      <div className="h-[250vh] bg-none"></div>
-      <section id="about" className="bg-[#1E1E24] relative z-[10]">
-        <div className="flex items-start justify-center">
-          <About />
-        </div>
-      </section>
-    </>
+    <section id="work">
+      <HorizontalScrollCarousel />
+    </section>
   );
 };
 
@@ -35,7 +20,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-220%"]);
 
   return (
-    <div className="fixed top-0 z-[1]">
+    <div className="fixed top-0">
       <section ref={targetRef} className="relative h-[400vh] bg-[#FFCF99]">
         <div className="h-screen flex items-center justify-center">
           <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-8xl sm:text-9xl">

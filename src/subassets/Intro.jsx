@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col w-full">
+      <div className="flex justify-center items-center flex-col">
         <h1 className="p-10 pt-0 pr-12 text-5xl sm:pt-10">
           {" "}
           <span style={{ color: "#FFF", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["Hi there...", "I'm Jo", "Get to know me!"]}
+              words={["Hi there...", "I'm Jo", "How well do you know me?"]}
               cursor
               cursorStyle="_"
               typeSpeed={70}
