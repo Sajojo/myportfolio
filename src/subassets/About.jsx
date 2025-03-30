@@ -53,12 +53,12 @@ const CenterImage = () => {
     console.log(latest);
   });*/
   }
-  const clip1 = useTransform(scrollY, [1908, 5555], [25, 0]);
-  const clip2 = useTransform(scrollY, [1908, 5555], [75, 100]);
+  const clip1 = useTransform(scrollY, [2208, 5555], [25, 0]);
+  const clip2 = useTransform(scrollY, [2208, 5555], [75, 100]);
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
-  const backgroundSize = useTransform(scrollY, [1908, 7500], ["170%", "240%"]);
+  const backgroundSize = useTransform(scrollY, [2208, 7500], ["170%", "240%"]);
 
   return (
     <motion.div
