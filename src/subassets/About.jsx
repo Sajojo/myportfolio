@@ -36,9 +36,6 @@ const Hero = () => {
       style={{ height: `calc(${SECTION_HEIGHT}px + 180vh)` }}
       className="relative w-full"
     >
-      <div className="justify-center sticky top-0 flex pt-[20%] sm:pt-[10%] ">
-        <span className=" text-[#FFF8F0] font-bold text-5xl">This is Me</span>
-      </div>
       <div className="flex sticky top-0 justify-center">
         <CenterImage />
       </div>
@@ -54,23 +51,32 @@ const CenterImage = () => {
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log(latest);
   });
-  const clip1 = useTransform(scrollY, [2334, 3830], [25, 0]);
-  const clip2 = useTransform(scrollY, [2334, 3830], [75, 100]);
+  const clip1 = useTransform(scrollY, [1908, 2350], [25, 0]);
+  const clip2 = useTransform(scrollY, [1908, 2350], [75, 100]);
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
-  const backgroundSize = useTransform(scrollY, [2028, 2728], ["170%", "100%"]);
+  const backgroundSize = useTransform(scrollY, [1908, 4500], ["170%", "240%"]);
 
   return (
     <motion.div
-      className=" h-screen w-[100%] sm:w-[80%] md:w-[70%] bg-center"
+      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[70%] bg-center"
       style={{
         clipPath,
         backgroundSize,
         backgroundImage: "url(./openEyes.png)",
         backgroundRepeat: "no-repeat",
+        backgroundClip: "text",
+        fontWeight: "900",
+        color: "transparent",
       }}
-    />
+    >
+      <span className="flex flex-col leading-[0.65]">
+        <span className="text-[45vw] tracking-[-0.12em]">THIS</span>
+        <span className="text-[70vw] "> IS</span>
+        <span className="text-[60vw]">ME</span>
+      </span>
+    </motion.div>
   );
 };
 
