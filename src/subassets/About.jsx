@@ -4,6 +4,7 @@ import {
   motion,
   useMotionTemplate,
   useScroll,
+  // eslint-disable-next-line no-unused-vars
   useMotionValueEvent,
   useTransform,
 } from "framer-motion";
@@ -103,17 +104,42 @@ const ParallaxImages = () => {
       />
       <ParallaxImg
         src="./parallaxStuff/camera2.png"
-        alt="Orbiting satellite"
+        alt="Shoot Right"
         start={250}
-        end={50}
+        end={20}
         className="ml-auto w-1/3 sm:ml-200"
       />
+
+      <ParallaxImg
+        src="./parallaxStuff/cat.png"
+        alt="Cat"
+        start={250}
+        end={50}
+        className="ml-7 w-6/12"
+      />
+
+      <ParallaxImg
+        src="./parallaxStuff/eyye.png"
+        alt="Eye"
+        start={450}
+        end={10}
+        className="mx-20 w-2/3"
+      />
+
+      <ParallaxImg
+        src="./parallaxStuff/room.png"
+        alt="room"
+        start={100}
+        end={500}
+        className="ml-12 w-1/3"
+      />
+
       <ParallaxImg
         src="./parallaxStuff/camera1.png"
-        alt="Orbiting satellite"
-        start={-150}
-        end={500}
-        className="ml-12 w-5/12"
+        alt="Shoot Front"
+        start={200}
+        end={50}
+        className="ml-auto w-5/12"
       />
     </div>
   );
