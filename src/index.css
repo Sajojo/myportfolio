@@ -8,20 +8,20 @@
 html,
 body {
   scroll-behavior: smooth;
-  overflow: clip;
+  overflow-x: clip;
   overscroll-behavior: none;
 }
 
-svg {
+#signature {
   padding-right: 10%;
   padding-left: 10%;
   fill: #111d4a;
   fill-opacity: 50%;
   stroke: #fff8f0;
-  stroke-width: 0.7;
+  stroke-width: 0.5;
   stroke-dasharray: 90;
   stroke-dashoffset: 90;
-  overflow: visible;
+  overflow: clip;
   animation: textAnimation 8s ease-in-out infinite;
 }
 

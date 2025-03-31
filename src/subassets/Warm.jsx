@@ -27,7 +27,7 @@ const Warm = () => {
       initial="initial"
       animate={controls}
       id="warm"
-      className="h-[100%] w-screen flex flex-col justify-center items-center bg-[#FFF8F0] fixed z-100"
+      className="h-screen w-screen flex flex-col justify-center items-center bg-[#FFF8F0] fixed z-100"
     >
       <h1 className="text-4xl sm:text-8xl">
         {" "}
