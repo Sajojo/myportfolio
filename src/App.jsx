@@ -7,7 +7,7 @@ import { Warm } from "./subassets/Warm.jsx";
 function App() {
   return (
     <>
-      {/*<Warm />*/}
+      <Warm />
 
       <div id="wrapper" className="">
         <div className="bg-[#1E1E24] relative z-[10] flex h-screen items-center justify-center ">
