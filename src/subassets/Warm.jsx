@@ -12,7 +12,7 @@ const Warm = () => {
     <motion.div
       whileInView={{
         opacity: 0,
-        transition: { delay: 7, duration: 1 },
+        transition: { delay: 8, duration: 1 },
         transitionEnd: { display: "none" },
       }}
       variants={{
@@ -29,7 +29,7 @@ const Warm = () => {
       id="warm"
       className="h-screen w-screen flex flex-col justify-center items-center bg-[#FFF8F0] fixed z-100"
     >
-      <h1 className="text-4xl sm:text-8xl">
+      <h1 className="text-4xl mb-20 sm:text-8xl">
         {" "}
         <span style={{ color: "#111D4A", fontWeight: "bold" }}>
           {/* Style will be inherited from the parent element */}
@@ -45,7 +45,7 @@ const Warm = () => {
       </h1>
       <button
         onClick={handleClick}
-        className="fixed bottom-0 flex flex-row justify-center items-center pb-20 hover:underline hover:underline-offset-4 hover:cursor-pointer text-2xl sm:text-4xl"
+        className="fixed bottom-5 flex flex-row justify-center items-center hover:underline hover:underline-offset-4 hover:cursor-pointer text-1xl sm:text-2xl"
       >
         Skip <MdOutlineKeyboardDoubleArrowRight />
       </button>
