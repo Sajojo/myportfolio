@@ -3,12 +3,11 @@
 
 :root {
   font-family: "Rubik";
-  overflow-x: hidden;
 }
 
 html,
 body {
-  width: 100%;
   scroll-behavior: smooth;
+  overflow-x: clip;
   overscroll-behavior: none;
 }

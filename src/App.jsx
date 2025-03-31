@@ -2,23 +2,27 @@ import Hsc from "./HorizontalScrollCarousel.jsx";
 import About from "./subassets/About.jsx";
 import Intro from "./subassets/Intro.jsx";
 import Contact from "./subassets/Contact.jsx";
+import Warm from "./subassets/Warm.jsx";
 
 function App() {
   return (
     <>
-      <section className="bg-[#1E1E24] relative z-[10] ">
-        <div className="flex h-screen items-start pt-[17%] sm:pt-0 sm:items-center justify-center">
+      <div>
+        <Warm />
+      </div>
+      <div>
+        <div className="bg-[#1E1E24] relative z-[10] flex h-screen items-center justify-center">
           <Intro />
         </div>
-      </section>
-      <Hsc />
-      <section className="h-[250vh]" />
-      <div id="about" className="relative w-screen z-0">
-        <About />
+        <Hsc />
+        <section className="h-[250vh]" />
+        <div id="about" className="sticky top-0 w-screen z-0">
+          <About />
+        </div>
+        <div id="ctc">
+          <Contact />
+        </div>
       </div>
-      {/*<div id="ctc">
-        <Contact />
-      </div>*/}
     </>
   );
 }

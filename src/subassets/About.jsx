@@ -12,7 +12,7 @@ import { useRef } from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#1E1E24]">
+    <div className="bg-[#1E1E24] ">
       <ReactLenis
         root
         options={{
@@ -33,7 +33,7 @@ const SECTION_HEIGHT = 1900;
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[calc(1900px+180vh)] sm:h-[calc(1900px+300vh)]">
+    <div className=" h-[calc(1900px+180vh)] sm:h-[calc(1900px+300vh)] md:sm:h-[calc(1900px+420vh)]">
       <div className="flex sticky top-0 justify-center">
         <CenterImage />
       </div>
@@ -60,7 +60,7 @@ const CenterImage = () => {
 
   return (
     <motion.div
-      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[60%] bg-center"
+      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[50%] bg-center"
       style={{
         clipPath,
         backgroundSize,
@@ -72,7 +72,7 @@ const CenterImage = () => {
       }}
     >
       <span className="flex flex-col leading-[0.65]">
-        <span className="text-[45vw] tracking-[-0.12em] sm:text-[25vw] md:text-[25vw]">
+        <span className="text-[45vw] tracking-[-0.12em] sm:text-[25vw] md:text-[20vw]">
           THIS
         </span>
         <span className="text-[70vw] sm:text-[45vw] md:text-[40vw]"> IS</span>
@@ -120,7 +120,7 @@ const ParallaxImages = () => {
         alt="Eye"
         start={450}
         end={10}
-        className="mx-20 w-2/3"
+        className="mx-45 w-2/3"
       />
 
       <ParallaxImg
@@ -128,7 +128,7 @@ const ParallaxImages = () => {
         alt="room"
         start={100}
         end={500}
-        className="ml-12 w-1/3"
+        className="ml-12 w-1/3 sm:-ml-40"
       />
 
       <ParallaxImg
