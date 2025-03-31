@@ -13,32 +13,31 @@ body {
 }
 
 #signature {
-  padding-right: 10%;
-  padding-left: 10%;
   fill: #111d4a;
+  padding-left: 15%;
+  padding-right: 15%;
   fill-opacity: 50%;
   stroke: #fff8f0;
-  stroke-width: 0.5;
-  stroke-dasharray: 90;
-  stroke-dashoffset: 90;
-  overflow: clip;
-  animation: textAnimation 8s ease-in-out infinite;
+  stroke-width: 0.7;
+  stroke-dasharray: 444;
+  stroke-dashoffset: 444;
+  animation: textAnimation 18s ease-in-out infinite;
 }
 
 @keyframes textAnimation {
   0% {
-    stroke-dashoffset: 90;
+    stroke-dashoffset: 444;
   }
   25% {
     stroke-dashoffset: 0;
   }
   50% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 444;
   }
   75% {
     stroke-dashoffset: 0;
   }
   100% {
-    stroke-dashoffset: 90;
+    stroke-dashoffset: 444;
   }
 }
