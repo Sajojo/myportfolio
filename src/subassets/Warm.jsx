@@ -19,7 +19,6 @@ const Warm = () => {
         initial: { opacity: 1 },
         close: {
           opacity: 0,
-
           transition: {
             duration: 1,
           },
@@ -27,7 +26,8 @@ const Warm = () => {
       }}
       initial="initial"
       animate={controls}
-      className="h-screen w-screen flex flex-col justify-center items-center bg-[#FFF8F0] fixed z-50"
+      id="warm"
+      className="h-[100%] w-screen flex flex-col justify-center items-center bg-[#FFF8F0] fixed z-100"
     >
       <h1 className="text-4xl sm:text-8xl">
         {" "}
@@ -53,4 +53,4 @@ const Warm = () => {
   );
 };
 
-export default Warm;
+export { Warm };

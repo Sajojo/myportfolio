@@ -2,16 +2,15 @@ import Hsc from "./HorizontalScrollCarousel.jsx";
 import About from "./subassets/About.jsx";
 import Intro from "./subassets/Intro.jsx";
 import Contact from "./subassets/Contact.jsx";
-import Warm from "./subassets/Warm.jsx";
+import { Warm } from "./subassets/Warm.jsx";
 
 function App() {
   return (
     <>
-      <div>
-        <Warm />
-      </div>
-      <div>
-        <div className="bg-[#1E1E24] relative z-[10] flex h-screen items-center justify-center">
+      {/*<Warm />*/}
+
+      <div id="wrapper" className="">
+        <div className="bg-[#1E1E24] relative z-[10] flex h-screen items-center justify-center ">
           <Intro />
         </div>
         <Hsc />

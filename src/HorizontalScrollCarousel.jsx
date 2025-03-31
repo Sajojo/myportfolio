@@ -20,7 +20,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-220%"]);
 
   return (
-    <div className="fixed top-0">
+    <div className="fixed top-0 ">
       <section ref={targetRef} className="relative h-[400vh] bg-[#FFCF99]">
         <div className="h-screen flex items-center justify-center">
           <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-8xl sm:text-9xl">

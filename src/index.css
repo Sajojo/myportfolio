@@ -8,6 +8,37 @@
 html,
 body {
   scroll-behavior: smooth;
-  overflow-x: clip;
+  overflow: clip;
   overscroll-behavior: none;
+}
+
+svg {
+  padding-right: 10%;
+  padding-left: 10%;
+  fill: #111d4a;
+  fill-opacity: 50%;
+  stroke: #fff8f0;
+  stroke-width: 0.7;
+  stroke-dasharray: 90;
+  stroke-dashoffset: 90;
+  overflow: visible;
+  animation: textAnimation 8s ease-in-out infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 90;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 90;
+  }
 }

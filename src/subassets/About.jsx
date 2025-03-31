@@ -56,11 +56,11 @@ const CenterImage = () => {
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
-  const backgroundSize = useTransform(scrollY, [2208, 7500], ["170%", "240%"]);
+  const backgroundSize = useTransform(scrollY, [2208, 8100], ["170%", "240%"]);
 
   return (
     <motion.div
-      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[50%] bg-center"
+      className="flex justify-center items-center h-screen w-[100%] sm:w-[80%] md:w-[40%] bg-center"
       style={{
         clipPath,
         backgroundSize,
@@ -72,11 +72,11 @@ const CenterImage = () => {
       }}
     >
       <span className="flex flex-col leading-[0.65]">
-        <span className="text-[45vw] tracking-[-0.12em] sm:text-[25vw] md:text-[20vw]">
+        <span className="text-[45vw] tracking-[-0.12em] sm:text-[25vw] md:text-[20vw] ">
           THIS
         </span>
-        <span className="text-[70vw] sm:text-[45vw] md:text-[40vw]"> IS</span>
-        <span className="text-[60vw] sm:text-[35vw] md:text-[30vw]">ME</span>
+        <span className="text-[70vw] sm:text-[45vw] md:text-[30vw]"> IS</span>
+        <span className="text-[60vw] sm:text-[35vw] md:text-[28vw]">ME</span>
       </span>
     </motion.div>
   );
