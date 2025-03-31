@@ -17,7 +17,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-220%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["10%", "-200%"]);
 
   return (
     <div className="fixed top-0 ">

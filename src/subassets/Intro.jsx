@@ -10,12 +10,13 @@ const Intro = () => {
           id="signature"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="800"
+          width="900"
           zoomAndPan="magnify"
           viewBox="0 0 600 149.999998"
-          height="240"
+          height=""
           preserveAspectRatio="xMidYMid meet"
           version="1.0"
+          className="sm:w-400"
         >
           <g fill="#000000" fill-opacity="1">
             <g transform="translate(153.932945, 85.968954)">
@@ -86,22 +87,22 @@ const Intro = () => {
             </g>
           </g>
         </svg>
-        <div className="flex flex-col p-5 gap-10 text-2xl text-[#FFCF99] md:gap-10 md:flex-row lg:gap-20">
+        <div className="flex flex-col gap-10 text-2xl sm:text-5xl text-[#FFCF99] md:flex-row lg:gap-20">
           <a
             href="/#work"
-            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
+            className="p-4 sm:p-6 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
           >
             <strong>This</strong> is my work
           </a>
           <a
             href="/#about"
-            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
+            className="p-4 sm:p-6 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
           >
             <strong>This</strong> is me
           </a>
           <a
             href="#ctc"
-            className="p-4 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
+            className="p-4 sm:p-6 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
           >
             <strong>This</strong> to find me
           </a>
