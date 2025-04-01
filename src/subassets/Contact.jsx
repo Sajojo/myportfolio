@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
             <img
               className="w-8 h-8 rounded-full"
-              src="./rdj.jpg"
+              src="./rdj.jpeg"
               alt="RDJ image"
             />
           </div>
