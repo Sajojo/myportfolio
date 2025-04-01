@@ -28,7 +28,7 @@ const Contact = () => {
             <img
               className="w-8 h-8 rounded-full"
               src="./Jo.jpeg"
-              alt="Jo's images"
+              alt="Jo's images here"
             />
             <div
               ref={ref}
