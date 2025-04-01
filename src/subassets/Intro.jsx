@@ -89,24 +89,38 @@ const Intro = () => {
             </g>
           </g>
         </svg>
-        <div className="flex flex-col gap-10 text-2xl sm:text-3xl text-[#FFCF99] md:flex-row lg:gap-20">
+        <div className="flex flex-col items-center gap-5 text-2xl sm:text-3xl md:text-4xl text-[#FFF8F0] lg:gap-10">
           <a
-            href="/#work"
-            className="p-4 sm:p-6 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
+            href="#work"
+            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center"
           >
-            <strong>This</strong> is my work
+            <div className="flex p-4 sm:p-6 " id="choice">
+              <span id="hid">&gt;</span>
+              <strong className="text-[#FFCF99]">This&nbsp;</strong> is my work
+              <span id="hid">&lt;</span>
+            </div>
           </a>
           <a
-            href="/#about"
-            className="p-4 sm:p-6 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
+            href="#about"
+            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center"
           >
-            <strong>This</strong> is me
+            <div className="flex p-4 sm:p-6 " id="choice">
+              <span id="hid">&gt;</span>
+              <strong className="text-[#FFCF99]">This&nbsp;</strong>
+              is me
+              <span id="hid">&lt;</span>
+            </div>
           </a>
           <a
             href="#ctc"
-            className="p-4 sm:p-6 border-4 rounded-2xl hover:scale-120 hover:text-[#FFF] hover:transition-transform transition duration-200 text-center"
+            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center"
           >
-            <strong>This</strong> to find me
+            <div className="flex p-4 sm:p-6 " id="choice">
+              <span id="hid">&gt;</span>
+              <strong className="text-[#FFCF99]">This&nbsp;</strong>
+              is how to find me
+              <span id="hid">&lt;</span>
+            </div>
           </a>
         </div>
       </motion.div>

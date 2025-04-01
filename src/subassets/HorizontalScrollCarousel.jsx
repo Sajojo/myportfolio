@@ -4,11 +4,7 @@ import { useRef } from "react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Hsc = () => {
-  return (
-    <section id="work">
-      <HorizontalScrollCarousel />
-    </section>
-  );
+  return <HorizontalScrollCarousel />;
 };
 
 const HorizontalScrollCarousel = () => {
