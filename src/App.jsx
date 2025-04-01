@@ -1,14 +1,13 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import Hsc from "./HorizontalScrollCarousel.jsx";
 import About from "./subassets/About.jsx";
 import Intro from "./subassets/Intro.jsx";
 import Contact from "./subassets/Contact.jsx";
-import { Warm } from "./subassets/Warm.jsx";
 
 function App() {
   return (
     <>
-      <Warm />
-
       <div id="wrapper" className="">
         <div className="bg-[#1E1E24] relative z-[10] flex h-screen items-center justify-center ">
           <Intro />

@@ -120,7 +120,7 @@ const ParallaxImages = () => {
         alt="Eye"
         start={450}
         end={10}
-        className="mx-45 w-2/3"
+        className="mx-25 sm:mx-45 w-2/3"
       />
 
       <ParallaxImg
