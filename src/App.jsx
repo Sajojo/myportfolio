@@ -8,7 +8,7 @@ import Contact from "./subassets/Contact.jsx";
 function App() {
   return (
     <>
-      <div id="wrapper" className="">
+      <div id="home" className="">
         <div className="bg-[#1E1E24] relative z-[10] flex h-screen items-center justify-center ">
           <Intro />
         </div>
