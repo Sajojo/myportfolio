@@ -44,7 +44,7 @@ const Warm = () => {
         </h1>
         <button
           onClick={() => navigate("/home")}
-          className="fixed bottom-5 flex text-[#111D4A] flex-row justify-center items-center hover:underline hover:underline-offset-4 hover:cursor-pointer text-1xl sm:text-2xl"
+          className="fixed bottom-5 flex text-[#111D4A] flex-row justify-center items-center hover:underline hover:underline-offset-4 cursor-pointer text-1xl sm:text-2xl"
         >
           Skip <MdOutlineKeyboardDoubleArrowRight />
         </button>
