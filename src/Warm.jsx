@@ -47,7 +47,6 @@ const Warm = () => {
           className="fixed bottom-5 flex text-[#111D4A] flex-row justify-center items-center hover:underline hover:underline-offset-4 hover:cursor-pointer text-1xl sm:text-2xl"
         >
           Skip <MdOutlineKeyboardDoubleArrowRight />
-          <MdOutlineKeyboardDoubleArrowRight />
         </button>
       </motion.div>
       <div className="bg-[#1E1E24] h-screen w-screen fixed top-0 z-10"></div>
