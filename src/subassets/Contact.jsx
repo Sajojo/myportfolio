@@ -9,7 +9,11 @@ const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
+<<<<<<< HEAD
     <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 overflow-hidden">
+=======
+    <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 ">
+>>>>>>> 4171f96 (Final1)
       <div className="flex flex-col gap-20 justify-center items-center h-screen w-screen bg-[#1E1E24] sticky top-0 z-50">
         <span>
           <motion.h1
@@ -27,7 +31,11 @@ const Contact = () => {
           <div className="flex items-start gap-2.5 ">
             <img
               className="w-8 h-8 rounded-full"
+<<<<<<< HEAD
               src="./Jo.jpeg"
+=======
+              src="./jo.jpeg"
+>>>>>>> 4171f96 (Final1)
               alt="Jo's images here"
             />
             <div
@@ -88,14 +96,22 @@ const Contact = () => {
             </div>
             <img
               className="w-8 h-8 rounded-full"
+<<<<<<< HEAD
               src="./rdj.png"
+=======
+              src="./rdj.jpg"
+>>>>>>> 4171f96 (Final1)
               alt="RDJ image"
             />
           </div>
           <div className="flex items-start gap-2.5 ">
             <img
               className="w-8 h-8 rounded-full"
+<<<<<<< HEAD
               src="./Jo.jpeg"
+=======
+              src="./jo.jpeg"
+>>>>>>> 4171f96 (Final1)
               alt="Jo's image"
             />
             <div
