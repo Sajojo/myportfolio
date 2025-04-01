@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Warm from "./Warm.jsx";
 import App from "./App.jsx";
-import NotFoundPage from "./notfoundpage.jsx";
+import NotFoundPage from "./NotFoundPage.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Warm /> },
