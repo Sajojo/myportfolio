@@ -18,7 +18,7 @@ body {
   padding-right: 15%;
   fill-opacity: 50%;
   stroke: #ffcf99;
-  stroke-width: 1;
+  stroke-width: 4;
   stroke-dasharray: 444;
   stroke-dashoffset: 444;
   animation: textAnimation 18s ease-in-out infinite;
