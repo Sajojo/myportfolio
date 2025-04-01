@@ -10,7 +10,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true });
   return (
     /**/
-    <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 ">
+    <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 overflow-hidden ">
       <div className="flex flex-col gap-20 justify-center items-center h-screen w-screen bg-[#1E1E24] sticky top-0 z-50">
         <span>
           <motion.h1
@@ -102,7 +102,7 @@ const Contact = () => {
             <div
               ref={ref}
               style={{
-                transform: isInView ? "none" : "translateX(200px)",
+                transform: isInView ? "none" : "translateY(200px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 2.5s",
               }}
