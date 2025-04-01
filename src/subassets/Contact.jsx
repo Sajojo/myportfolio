@@ -9,6 +9,7 @@ const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
+    /**/
     <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 ">
       <div className="flex flex-col gap-20 justify-center items-center h-screen w-screen bg-[#1E1E24] sticky top-0 z-50">
         <span>
