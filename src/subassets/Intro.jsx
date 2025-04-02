@@ -2,7 +2,9 @@ import { React } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import HorizontalText from "./HorizontalText";
+import { FaLaptopCode } from "react-icons/fa";
+import { MdContactPhone } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
 
 const Intro = () => {
   return (
@@ -11,7 +13,7 @@ const Intro = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex justify-center items-center flex-col"
+        className="flex justify-center items-center gap-5 pt-[15%] sm:pt-[0] flex-col"
       >
         <svg
           id="signature"
@@ -19,7 +21,7 @@ const Intro = () => {
           viewBox="0 0 600 149.999998"
           preserveAspectRatio="xMidYMid meet"
           version="1.0"
-          className="w-[400pt] sm:w-[800pt]"
+          className="w-[420pt] md:w-[800pt]"
         >
           <defs>
             <g />
@@ -93,7 +95,10 @@ const Intro = () => {
             </g>
           </g>
         </svg>
-        <HorizontalText />
+        <div className="flex flex-row gap-2 items-center text-2xl sm:text-4xl justify-center w-screen text-[#FFF8F0]">
+          <FaLaptopCode />
+          <p className="">&lt; Web Developer /&gt;</p>
+        </div>
         <div className="pt-5 flex flex-col items-center text-2xl sm:text-3xl md:text-4xl gap-5 text-[#FFF8F0]">
           <a
             href="#work"
@@ -101,7 +106,7 @@ const Intro = () => {
           >
             <div className="flex p-4 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
-              <strong className="text-[#FFCF99]">This&nbsp;</strong> is my work
+              <strong className="text-[#FFCF99]">This&nbsp;</strong> is my Hobby
               <span id="hid">&lt;</span>
             </div>
           </a>
@@ -109,10 +114,13 @@ const Intro = () => {
             href="#about"
             className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center border-2 rounded-2xl"
           >
-            <div className="flex p-4 sm:p-6 " id="choice">
+            <div className="flex pt-4 pb-4 pl-6 pr-6 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
-              <strong className="text-[#FFCF99]">This&nbsp;</strong>
-              is me
+              <p className="flex flex-row items-center">
+                <strong className="text-[#FFCF99]">This&nbsp;</strong>
+                is Me&nbsp;
+                <CgProfile />
+              </p>
               <span id="hid">&lt;</span>
             </div>
           </a>
@@ -122,30 +130,34 @@ const Intro = () => {
           >
             <div className="flex p-4 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
-              <strong className="text-[#FFCF99]">This&nbsp;</strong>
-              to get in touch
+              <p className="flex flex-row items-center">
+                <strong className="text-[#FFCF99]">This&nbsp;</strong>
+                is my&nbsp;
+                <MdContactPhone />
+              </p>
               <span id="hid">&lt;</span>
             </div>
           </a>
         </div>
-      </motion.div>
-      <div className="absolute bottom-15">
-        <span className="flex flex-col justify-center text-[#FFF8F0] items-center">
-          <p>Scroll Down</p>
-          <motion.div
-            animate={{
-              translateY: [10, 7, 5, 1, 5, 7, 10],
-            }}
-            transition={{
-              duration: 1,
 
-              repeat: Infinity,
-            }}
-          >
-            <MdKeyboardDoubleArrowDown className="size-10" />
-          </motion.div>
-        </span>
-      </div>
+        <div className="absolute w-screen bottom-15 md:bottom-6">
+          <span className="flex flex-col justify-center text-[#FFF8F0] items-center">
+            <p>Scroll Down</p>
+            <motion.div
+              animate={{
+                translateY: [10, 7, 5, 1, 5, 7, 10],
+              }}
+              transition={{
+                duration: 1,
+
+                repeat: Infinity,
+              }}
+            >
+              <MdKeyboardDoubleArrowDown className="size-10" />
+            </motion.div>
+          </span>
+        </div>
+      </motion.div>
     </>
   );
 };

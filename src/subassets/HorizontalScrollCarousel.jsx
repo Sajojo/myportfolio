@@ -20,7 +20,7 @@ const HorizontalScrollCarousel = () => {
       <section ref={targetRef} className="relative h-[400vh] bg-[#FFCF99]">
         <div className="h-screen flex items-center justify-center">
           <h2 className="fixed left-0 w-[25%] text-[#000] font-bold text-8xl sm:text-9xl">
-            This is my work
+            This is my Hobby
           </h2>
 
           <div className="fixed right-15 sm:left-15">

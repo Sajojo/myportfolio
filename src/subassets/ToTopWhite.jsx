@@ -4,14 +4,12 @@ import { motion } from "framer-motion";
 
 const ToTopLight = () => {
   return (
-    <motion.a
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+    <a
       href="#top"
       className="fixed bottom-5 right-5 text-4xl text-[#FFCF99] z-80"
     >
       <FaCircleArrowUp />
-    </motion.a>
+    </a>
   );
 };
 export default ToTopLight;

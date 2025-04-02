@@ -12,7 +12,7 @@ function App() {
       <div id="home" className="">
         <div
           id="top"
-          className="bg-[#1E1E24] relative z-[100] flex h-screen items-center justify-center "
+          className="bg-[#1E1E24] relative z-[100] flex h-screen items-start sm:items-center justify-center "
         >
           <Intro />
         </div>
