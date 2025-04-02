@@ -118,8 +118,8 @@ const ParallaxImages = () => {
       <ParallaxImg
         src="./parallaxStuff/eyye.png"
         alt="Eye"
-        start={450}
-        end={10}
+        start={350}
+        end={100}
         className="mx-25 sm:mx-45 w-2/3"
       />
 
