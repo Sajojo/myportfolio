@@ -47,16 +47,12 @@ const Contact = () => {
                 <span className="text-sm font-semibold text-[#FFF8F0]">
                   #2803
                 </span>
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  08:08
-                </span>
+                <span className="text-sm font-normal text-gray-400">08:08</span>
               </div>
-              <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+              <p className="text-sm font-normal py-2.5 text-white">
                 This website? It was made to showcase what I can do 😅
               </p>
-              <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                Seen
-              </span>
+              <span className="text-sm font-normal text-gray-400">Seen</span>
             </div>
           </div>
           <div className="flex justify-end items-start gap-2.5">
@@ -76,16 +72,12 @@ const Contact = () => {
                 <span className="text-sm font-semibold text-[#FFF8F0]">
                   #2008
                 </span>
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  08:24
-                </span>
+                <span className="text-sm font-normal text-gray-400">08:24</span>
               </div>
-              <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+              <p className="text-sm font-normal py-2.5 text-white">
                 This website is awesome. Where can I find you?
               </p>
-              <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                Seen
-              </span>
+              <span className="text-sm font-normal text-gray-400">Seen</span>
             </div>
             <img
               className="w-8 h-8 rounded-full"
@@ -115,11 +107,11 @@ const Contact = () => {
                 <span className="text-sm font-semibold text-[#FFF8F0]">
                   #2803
                 </span>
-                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
+                <span className="text-sm font-normal  text-gray-400">
                   11:10
                 </span>
               </div>
-              <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+              <p className="text-sm font-normal py-2.5 text-white">
                 You can find me here!
               </p>
               <div className="flex flex-row w-full py-2.5 gap-10 justify-center items-center">
@@ -144,7 +136,7 @@ const Contact = () => {
                   <FaWhatsapp id="ctcs" className="text-5xl text-[#FFCF99] " />
                 </a>
               </div>
-              <span className="text-sm font-normal pt-2.5 text-gray-500 dark:text-gray-400">
+              <span className="text-sm font-normal pt-2.5  text-gray-400">
                 Delivered
               </span>
             </div>
