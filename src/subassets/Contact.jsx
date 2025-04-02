@@ -38,7 +38,7 @@ const Contact = () => {
                 opacity: isInView ? 1 : 0,
                 transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
               }}
-              className="flex flex-col w-[70%] leading-1.5 p-4 rounded-e-xl rounded-es-xlbg-gray-700"
+              className="flex flex-col w-[70%] leading-1.5 p-4 rounded-e-xl rounded-es-xl bg-gray-700"
             >
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <span className="text-sm font-semibold text-[#FFCF99] mr-0">
