@@ -21,7 +21,7 @@ const Contact = () => {
             }}
             className="text-[#FFF8F0] font-black text-3xl sm:text-5xl"
           >
-            My Contacts
+            Get in touch!
           </motion.h1>
         </span>
         <div className="flex flex-col gap-5 pl-[5%] pr-[5%]">
