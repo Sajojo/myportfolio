@@ -44,7 +44,7 @@ const Contact = () => {
                 <span className="text-sm font-semibold text-[#FFCF99] mr-0">
                   Paojo
                 </span>
-                <span className="text-sm font-semibold text-[#FFF8F0]">
+                <span className="text-sm font-semibold text-gray-500 dark:text-[#FFF8F0]">
                   #2803
                 </span>
                 <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -73,7 +73,7 @@ const Contact = () => {
                 <span className="text-sm font-semibold text-[#FFCF99] mr-0">
                   RDJ
                 </span>
-                <span className="text-sm font-semibold text-[#FFF8F0]">
+                <span className="text-sm font-semibold text-gray-500 dark:text-[#FFF8F0]">
                   #2008
                 </span>
                 <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -81,7 +81,7 @@ const Contact = () => {
                 </span>
               </div>
               <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
-                This website fire frfr 🔥🔥🔥 Where can I find you?
+                This website is awesome. Where can I find you?
               </p>
               <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                 Seen
@@ -112,7 +112,7 @@ const Contact = () => {
                 <span className="text-sm font-semibold text-[#FFCF99] mr-0">
                   Paojo
                 </span>
-                <span className="text-sm font-semibold text-[#FFF8F0]">
+                <span className="text-sm font-semibold text-gray-500 dark:text-[#FFF8F0]">
                   #2803
                 </span>
                 <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
