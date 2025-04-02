@@ -1,6 +1,7 @@
 import { React } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Intro = () => {
   return (
@@ -126,6 +127,23 @@ const Intro = () => {
           </a>
         </div>
       </motion.div>
+      <div className="fixed bottom-15">
+        <span className="flex flex-col justify-center text-[#FFF8F0] items-center">
+          <p>Scroll Down</p>
+          <motion.div
+            animate={{
+              translateY: [10, 7, 5, 1, 5, 7, 10],
+            }}
+            transition={{
+              duration: 1,
+
+              repeat: Infinity,
+            }}
+          >
+            <MdKeyboardDoubleArrowDown className="size-10" />
+          </motion.div>
+        </span>
+      </div>
     </>
   );
 };

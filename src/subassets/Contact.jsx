@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     /**/
     <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 overflow-hidden ">
-      <div className="flex flex-col gap-20 justify-center items-center h-screen w-screen bg-[#1E1E24] sticky top-0 z-50">
+      <div className="flex flex-col gap-20 justify-center items-center h-screen w-screen bg-[#1E1E24] sticky top-0 z-40">
         <span>
           <motion.h1
             initial={{ opacity: 0 }}
