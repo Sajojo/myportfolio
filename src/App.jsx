@@ -4,7 +4,7 @@ import Hsc from "./subassets/HorizontalScrollCarousel.jsx";
 import About from "./subassets/About.jsx";
 import Intro from "./subassets/Intro.jsx";
 import Contact from "./subassets/Contact.jsx";
-import ToTop from "./subassets/ToTop.jsx";
+import ToTopLight from "./subassets/ToTopWhite.jsx";
 
 function App() {
   return (
@@ -17,17 +17,18 @@ function App() {
           <Intro />
         </div>
         <div>
-          <ToTop />
           <div id="work">
             <Hsc />
           </div>
           <section className="h-[250vh]" />
-
-          <div id="about" className="sticky top-0 w-screen z-0">
-            <About />
-          </div>
-          <div id="ctc">
-            <Contact />
+          <div>
+            <ToTopLight />
+            <div id="about" className="sticky top-0 w-screen z-30">
+              <About />
+            </div>
+            <div id="ctc">
+              <Contact />
+            </div>
           </div>
         </div>
       </div>

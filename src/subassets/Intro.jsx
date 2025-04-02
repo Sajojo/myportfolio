@@ -2,6 +2,7 @@ import { React } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import HorizontalText from "./HorizontalText";
 
 const Intro = () => {
   return (
@@ -92,10 +93,11 @@ const Intro = () => {
             </g>
           </g>
         </svg>
-        <div className="pt-5 flex flex-col items-center text-2xl sm:text-3xl md:text-4xl text-[#FFF8F0]">
+        <HorizontalText />
+        <div className="pt-5 flex flex-col items-center text-2xl sm:text-3xl md:text-4xl gap-5 text-[#FFF8F0]">
           <a
             href="#work"
-            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center"
+            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center border-2 rounded-2xl"
           >
             <div className="flex p-4 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
@@ -105,7 +107,7 @@ const Intro = () => {
           </a>
           <a
             href="#about"
-            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center"
+            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center border-2 rounded-2xl"
           >
             <div className="flex p-4 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
@@ -116,7 +118,7 @@ const Intro = () => {
           </a>
           <a
             href="#ctc"
-            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center"
+            className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center border-2 rounded-2xl"
           >
             <div className="flex p-4 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
