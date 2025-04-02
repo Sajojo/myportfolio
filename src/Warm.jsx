@@ -11,7 +11,7 @@ const Warm = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/home");
-    }, 9000);
+    }, 10000);
   });
   return (
     <>
