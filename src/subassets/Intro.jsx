@@ -127,7 +127,7 @@ const Intro = () => {
           </a>
         </div>
       </motion.div>
-      <div className="fixed bottom-15">
+      <div className="absolute bottom-15">
         <span className="flex flex-col justify-center text-[#FFF8F0] items-center">
           <p>Scroll Down</p>
           <motion.div
