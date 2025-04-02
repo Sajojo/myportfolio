@@ -33,11 +33,11 @@ const Warm = () => {
           <span style={{ color: "#111D4A", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["This is Hello", "This is Welcome", "This is Jo"]}
+              words={["Welcome", "欢迎光临", "Selamat Datang"]}
               cursor
               cursorStyle="_"
-              typeSpeed={70}
-              deleteSpeed={50}
+              typeSpeed={100}
+              deleteSpeed={150}
               delaySpeed={1000}
             />
           </span>
