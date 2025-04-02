@@ -81,7 +81,7 @@ const Contact = () => {
                 </span>
               </div>
               <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
-                This website fire frfr 🔥🔥🔥
+                This website fire frfr 🔥🔥🔥 Where can I find you?
               </p>
               <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                 Seen
@@ -116,7 +116,7 @@ const Contact = () => {
                   #2803
                 </span>
                 <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                  08:08
+                  11:10
                 </span>
               </div>
               <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
