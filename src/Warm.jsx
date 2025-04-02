@@ -36,8 +36,8 @@ const Warm = () => {
               words={["Welcome", "欢迎光临", "Selamat Datang"]}
               cursor
               cursorStyle="_"
-              typeSpeed={200}
-              deleteSpeed={150}
+              typeSpeed={100}
+              deleteSpeed={120}
               delaySpeed={1500}
             />
           </span>
