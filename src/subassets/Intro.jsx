@@ -120,7 +120,7 @@ const Intro = () => {
             <div className="flex p-4 sm:p-6 " id="choice">
               <span id="hid">&gt;</span>
               <strong className="text-[#FFCF99]">This&nbsp;</strong>
-              is how to contact
+              to get in touch
               <span id="hid">&lt;</span>
             </div>
           </a>
