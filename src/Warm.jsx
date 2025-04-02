@@ -20,7 +20,7 @@ const Warm = () => {
           initial: { opacity: 1 },
           close: {
             opacity: 0,
-            transition: { delay: 8.5, duration: 1 },
+            transition: { delay: 9, duration: 1 },
           },
         }}
         initial="initial"
