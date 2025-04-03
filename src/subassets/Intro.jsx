@@ -132,8 +132,7 @@ const Intro = () => {
               <span id="hid">&gt;</span>
               <p className="flex flex-row items-center">
                 <strong className="text-[#FFCF99]">This&nbsp;</strong>
-                is my&nbsp;
-                <MdContactPhone />
+                is my Contact
               </p>
               <span id="hid">&lt;</span>
             </div>
