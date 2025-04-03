@@ -10,8 +10,8 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true });
   return (
     /**/
-    <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 overflow-hidden ">
-      <div className="flex flex-col gap-20 justify-center items-center h-screen w-screen bg-[#1E1E24] sticky top-0 z-40">
+    <div className="h-screen w-screen bg-[#111D4A] sticky top-0 z-50 overflow-hidden">
+      <div className="flex flex-col gap-10 justify-start pt-[15%] items-center h-screen w-screen bg-[#1E1E24] z-40">
         <span>
           <motion.h1
             initial={{ opacity: 0 }}
@@ -21,7 +21,7 @@ const Contact = () => {
             }}
             className="text-[#FFF8F0] font-black text-3xl sm:text-5xl"
           >
-            Get in touch!
+            This is my Contact
           </motion.h1>
         </span>
         <div className="flex flex-col gap-5 pl-[5%] pr-[5%]">
