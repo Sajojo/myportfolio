@@ -3,7 +3,6 @@ import { React } from "react";
 import { motion } from "framer-motion";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
-import { MdContactPhone } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 
 const Intro = () => {
