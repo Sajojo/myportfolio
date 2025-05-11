@@ -98,7 +98,7 @@ const Intro = () => {
           <FaLaptopCode />
           <p className="">&lt; Web Developer /&gt;</p>
         </div>
-        <div className="pt-5 flex flex-col items-center text-2xl sm:text-3xl md:text-4xl gap-5 text-[#FFF8F0]">
+        <div className="pt-5 flex flex-col items-center text-2xl sm:text-3xl gap-5 text-[#FFF8F0]">
           <a
             href="#work"
             className="hover:scale-102 hover:text-[#FFCF99] duration-200 text-center border-2 rounded-2xl"
@@ -139,7 +139,7 @@ const Intro = () => {
         </div>
 
         <div className="absolute w-screen bottom-15 md:bottom-6">
-          <span className="flex flex-col justify-center text-[#FFF8F0] items-center">
+          <span className="flex flex-col text-[#FFF8F0] items-center">
             <p>Scroll Down</p>
             <motion.div
               animate={{
